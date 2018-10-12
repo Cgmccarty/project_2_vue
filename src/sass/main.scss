@@ -1,0 +1,122 @@
+// Import bootstrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$persimmon: #ff634d;
+$yellow: #FFFF99;
+
+html, body {
+  background-color: black;
+  font-family: cursive;
+  letter-spacing: 1px;
+  color: white;
+
+  body {
+    margin: 20px;
+  }
+}
+
+h1, h2, h4 {
+  color: $yellow;
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  text-shadow:  -2px 0 $persimmon, 0 2px $persimmon, 2px 0 $persimmon, 0 -2px $persimmon;
+  letter-spacing: 3px;
+
+  h3 {
+    margin-left: 40px;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+}
+
+h2 {
+  margin-left: 42px;
+}
+
+h1{
+  font-size: 80px;
+  margin-left: 40px;
+}
+
+a {
+  color: $yellow;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: $persimmon;
+  width: 550px;
+  height: 180px;
+  text-overflow: ellipsis;
+  padding: 10px;
+  margin: auto;
+  border-bottom-right-radius: 18%;
+  border-top-left-radius: 18%;
+  border-color: yellow;
+  overflow: auto;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+
+.menu {
+  margin: 50px;
+
+  .card-header {
+    border: none;
+    background-color: $persimmon;
+  }
+}
+
+.introduction {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: black;
+  font-size: 25px;
+  padding-bottom: 65px;
+  border-bottom: 2px solid white;
+}
+
+header {
+
+  border-bottom: 2px solid white;
+  margin-bottom: 65px;
+
+  .row {
+
+    padding: 0;
+    margin: 0;
+
+    .card-header {
+      // background-color: black;
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.card-body {
+  background-color: black;
+  font-family: cursive;
+  border-top-left-radius: 18%;
+  border-bottom-right-radius: 23%;
+}
+
+p {
+  text-align: left;
+}
+
+.comeback {
+  margin: 10px;
+  background-color: black;
+  font-size: 25px;
+}
