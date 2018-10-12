@@ -75,8 +75,8 @@
       <h2>Our Menu of the Day</h2>
       <div class="menu" id="app">
         <div class="row">
-          <div class="card mb-4">
-            <h4 class="card-header">Daily Item 1</h4>
+          <div v-for="(item, index) in menu" class="card mb-4">
+            <h4 class="card-header">Daily Item {{ item }} </h4>
             <div class="card-body" id='body0'>
             </div>
           </div>

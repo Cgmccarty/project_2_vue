@@ -3,7 +3,10 @@ let app = new Vue({
   el: "#app",
 
   data: {
+
     apiRequest: new XMLHttpRequest(),
+    menu: {}
+
   },
 
   created: function () {
@@ -15,15 +18,28 @@ let app = new Vue({
     this.apiRequest.onload = this.onSuccess;
     this.apiRequest.onerror = this.onError;
     this.apiRequest.open('get', url, true);
-    // apiRequest.setRequestHeader('x-api-key', 'your-key-here');
     this.apiRequest.send();
 
   },
 
   methods: {
+
     printMenu: function () {
       console.log(this.apiRequest);
+    },
+
+    onSuccess: function () {
+
+      if (this.apiRequest.status == "200") {
+          this.menu = JSON.parse(this.apiRequest.responseText);
+          console.log(this.menu);
+      }
+      else {
+          this.onError();
+      }
+
     }
+
   }
 
 
